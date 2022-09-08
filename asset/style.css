@@ -1,0 +1,28 @@
+body {
+    transition: 0.3s;
+    font-size: 1.4rem;
+    margin: 1rem;
+    padding: 0;
+    background-color: rgb(128 209 215);
+    color: rgb(68 68 56);
+  }
+
+.card-body {
+    background-color: rgb(128 209 215);
+    padding: 2.5rem;  
+}
+.custom-jumbotron {
+    background-color: rgb(36 179 171);  
+}
+
+.bg-search {
+    background-color: rgb(50 164 157);  
+}
+
+.fiveDayColor {
+    padding: 1rem; 
+}
+
+.btn { 
+    font-size: 1.4rem;
+}

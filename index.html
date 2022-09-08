@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/style.css">
+    <title>Project Tracker</title>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid custom-jumbotron">
+        <div class="container text-center">
+            <h1>Weather Dashboard</h1>
+            <h2> <span id="time-display"></span></h2>
+        </div>
+    </header>
+
+    <div class="container justify-content-center">
+        <div class="justify-content-center col-md bg-search p-3 border border-success">
+            <h3 class="card-header">Search for a City</h3>
+            <form id="city-form" class=mb-2">
+                <input type="text" class="form-input w-100 " id="search-input" placeholder="Input City!" />
+                <button type="submit" class="btn btn-block custom-btn" data-toggle="modal"
+                    data-target="#project-modal">Search
+                </button>
+            </form>
+            <div class="col-6">
+                <h>Past Searched:</h4>
+                    <br />
+                    <ul class="list-group" id="city-list"></ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-9 p-3 text-dark">
+            <h2> 5 Days results for : <span id="result-text"></span></h2>
+            <div id="result-content"></div>
+        </div>
+    </div>
+
+    <div class="row container-fluid justify-content-center ">
+        <div class="row five-Day d-flex justify-content-center">
+            <!-- Displays 5 day forecast-->
+            <div class="row">
+                <div class="col five-Day">
+                    <div class="table">
+                        <div class="forecast">
+                            <div class="flex-row d-flex justify-content-between">
+                                <div class="col-12 col-md-2">
+                                    <div class=" card-style ">
+                                        <div id="day-1-div " class="card-body rounded-pill border border-success">
+                                            <h3 class="dateText" id="day-1-date"></h3>
+                                            <p>
+                                                <img class="weathericon" id="icon-1">
+                                            </p>
+                                            <p>Temp: <span class="tempText" id="day-1-temp"></span>
+                                            </p>
+                                            <p>Wind: <span class="windText" id="day-1-wind"></span>
+                                            </p>
+                                            <p>Humidity: <span class="humidityText" id="day-1-humidity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="card-style">
+                                        <div id="day-2-div" class="card-body rounded-pill border border-success">
+                                            <h3 class="dateText" id="day-2-date"></h3>
+                                            <p>
+                                                <img class="weathericon" id="icon-2">
+                                            </p>
+                                            <p>Temp: <span class="tempText" id="day-2-temp"></span>
+                                            </p>
+                                            <p>Wind: <span class="windText" id="day-2-wind"></span>
+                                            </p>
+                                            <p>Humidity: <span class="humidityText" id="day-2-humidity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="card-style">
+                                        <div id="day-3-div" class="card-body rounded-pill border border-success">
+                                            <h3 class="dateText" id="day-3-date"></h3>
+                                            <p>
+                                                <img class="weathericon" id="icon-3">
+                                            </p>
+                                            <p>Temp: <span class="tempText" id="day-3-temp"></span>
+                                            </p>
+                                            <p>Wind: <span class="windText" id="day-3-wind"></span>
+                                            </p>
+                                            <p>Humidity: <span class="humidityText" id="day-3-humidity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="">
+                                        <div id="day-4-div" class="card-body rounded-pill border border-success">
+                                            <h3 class="dateText" id="day-4-date"></h3>
+                                            <p>
+                                                <img class="weathericon" id="icon-4">
+                                            </p>
+                                            <p>Temp: <span class="tempText" id="day-4-temp"></span>
+                                            </p>
+                                            <p>Wind: <span class="windText" id="day-4-wind"></span>
+                                            </p>
+                                            <p>Humidity: <span class="humidityText" id="day-4-humidity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="">
+                                        <div id="day-5-div" class="card-body rounded-pill border border-success">
+                                            <h3 class="dateText" id="day-5-date"></h3>
+                                            <p>
+                                                <img class="weathericon" id="icon-5">
+                                            </p>
+                                            <p>Temp: <span class="tempText" id="day-5-temp"></span>
+                                            </p>
+                                            <p>Wind: <span class="windText" id="day-5-wind"></span>
+                                            </p>
+                                            <p>Humidity: <span class="humidityText" id="day-5-humidity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="./asset/config.js"></script>
+        <script src="./asset/script.js"></script>
+
+</body>
+
+</html>
