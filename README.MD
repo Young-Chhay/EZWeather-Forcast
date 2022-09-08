@@ -17,9 +17,9 @@ ___
 
 ## Project Content
 
-* [Github.com/Young-Chhay/EZWeather-Forcast](https://github.com/Young-Chhay/Young-Challenge-4 "Young's Github Page")
+* [Github.com/Young-Chhay/EZWeather-Forcast](https://github.com/Young-Chhay/EZWeather-Forcast "Github Page")
 
-* [Deployed : EZWeather-Forcast](https://young-chhay.github.io/Young-Challenge-4/ "Challenge-4's Webpage")
+* [Deployed : EZWeather-Forcast](https://young-chhay.github.io/EZWeather-Forcast/ "EZWeather-Forcast's Webpage")
 
 ![EZWeather-Demo](./asset/pics/Young-WeatherApp.png)
 
